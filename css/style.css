@@ -1,45 +1,55 @@
+/* ============================================
+   GLOBAL BASE STYLE
+   ============================================ */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
+/* Giới hạn chiều rộng khối text */
 .text-container {
     max-width: 600px;
 }
 
+
+
+/* ============================================
+   TEXT PRESENTATION DEMO (style cũ)
+   ============================================ */
+
 /* 1. line-height */
 .line-height {
-    line-height: 2; /* khoảng cách dòng lớn hơn */
+    line-height: 2;
 }
 
 /* 2. letter-spacing */
 .letter-spacing {
-    letter-spacing: 3px; /* tăng khoảng cách giữa các chữ cái */
+    letter-spacing: 3px;
 }
 
 /* 3. word-spacing */
 .word-spacing {
-    word-spacing: 10px; /* tăng khoảng cách giữa các từ */
+    word-spacing: 10px;
 }
 
 /* 4. text-decoration */
 .text-decoration {
-    text-decoration: underline; /* gạch chân */
+    text-decoration: underline;
 }
 
 /* 5. text-align */
 .text-align {
-    text-align: justify; /* căn đều hai bên */
+    text-align: justify;
 }
 
 /* 6. text-transform */
 .text-transform {
-    text-transform: uppercase; /* chuyển thành in hoa */
+    text-transform: uppercase;
 }
 
 /* 7. white-space */
 .white-space {
-    white-space: nowrap; /* không xuống dòng tự động */
+    white-space: nowrap;
 }
 
 /* 8. font-family */
@@ -49,20 +59,84 @@ body {
 
 /* 9. font-size */
 .font-size {
-    font-size: 22px; /* chữ lớn hơn */
+    font-size: 22px;
 }
 
 /* 10. font-weight */
 .font-weight {
-    font-weight: bold; /* chữ đậm */
+    font-weight: bold;
 }
 
 /* 11. font-variant */
 .font-variant {
-    font-variant: small-caps; /* dạng viết hoa nhỏ */
+    font-variant: small-caps;
 }
 
 /* 12. font-style */
 .font-style {
-    font-style: italic; /* chữ nghiêng */
+    font-style: italic;
+}
+
+
+
+/* ============================================
+   FORM STYLE (style mới – đã kiểm tra không conflict)
+   ============================================ */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+/* Layout hàng ngang cho input */
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  transition: 0.25s;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #008cff;
+  box-shadow: 0 0 5px rgba(0,140,255,0.4);
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background: #008cff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #006bd6;
 }

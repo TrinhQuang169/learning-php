@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Đăng ký tài khoản</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .row { display: flex; gap: 10px; margin-bottom: 10px; }
+    input, select, textarea, button { padding: 6px; font-size: 14px; }
+    textarea { width: 100%; height: 120px; }
+    .full { flex: 1 1 100%; }
+    .row select { flex: 1; }
+  </style>
+</head>
+<body>
+  <h1>Đăng ký tài khoản!</h1>
+  <p>Nhập và lựa chọn các thông tin đăng ký.</p>
+
+  <form onsubmit="event.preventDefault(); alert('Đã gửi (demo)');">
+    <div class="row">
+      <input type="text" name="firstname" placeholder="Tên">
+      <input type="text" name="middlename" placeholder="Họ đệm">
+    </div>
+
+    <div class="row">
+      <input type="email" name="email" placeholder="Địa chỉ Email">
+      <input type="tel" name="phone" placeholder="Số điện thoại">
+    </div>
+
+    <div class="row">
+      <select name="city">
+        <option value="">Chọn thành phố ▾</option>
+        <option>Hà Nội</option>
+        <option>Hồ Chí Minh</option>
+        <option>Đà Nẵng</option>
+        <option>Hải Phòng</option>
+      </select>
+
+      <select name="district">
+        <option value="">Chọn tỉnh ▾</option>
+        <option>Quận 1</option>
+        <option>Quận 2</option>
+        <option>Quận 3</option>
+        <option>Quận Bình Thạnh</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <textarea name="note" placeholder="Ghi chú" class="full"></textarea>
+    </div>
+
+    <div class="row">
+      <button type="submit">Đăng ký</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+/* 1. line-height */
+.line-height {
+    line-height: 2; /* khoảng cách dòng lớn hơn */
+}
+
+/* 2. letter-spacing */
+.letter-spacing {
+    letter-spacing: 3px; /* tăng khoảng cách giữa các chữ cái */
+}
+
+/* 3. word-spacing */
+.word-spacing {
+    word-spacing: 10px; /* tăng khoảng cách giữa các từ */
+}
+
+/* 4. text-decoration */
+.text-decoration {
+    text-decoration: underline; /* gạch chân */
+}
+
+/* 5. text-align */
+.text-align {
+    text-align: justify; /* căn đều hai bên */
+}
+
+/* 6. text-transform */
+.text-transform {
+    text-transform: uppercase; /* chuyển thành in hoa */
+}
+
+/* 7. white-space */
+.white-space {
+    white-space: nowrap; /* không xuống dòng tự động */
+}
+
+/* 8. font-family */
+.font-family {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* 9. font-size */
+.font-size {
+    font-size: 22px; /* chữ lớn hơn */
+}
+
+/* 10. font-weight */
+.font-weight {
+    font-weight: bold; /* chữ đậm */
+}
+
+/* 11. font-variant */
+.font-variant {
+    font-variant: small-caps; /* dạng viết hoa nhỏ */
+}
+
+/* 12. font-style */
+.font-style {
+    font-style: italic; /* chữ nghiêng */
+}
